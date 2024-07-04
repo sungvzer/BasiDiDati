@@ -1,0 +1,7 @@
+CREATE TABLE Pilota (
+    id NUMBER GENERATED ALWAYS AS IDENTITY(START WITH 1 INCREMENT BY 1) PRIMARY KEY,
+    nome VARCHAR(100),
+    cognome VARCHAR(100),
+    data_di_nascita DATE,
+    nazionalita VARCHAR(100)
+);

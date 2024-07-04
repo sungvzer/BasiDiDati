@@ -1,0 +1,13 @@
+DROP TABLE Iscrizione;
+DROP TABLE Pilota;
+DROP TABLE Squadra;
+DROP TABLE NoteSteward;
+DROP TABLE Passaggio;
+DROP TABLE Sessione;
+DROP TABLE Auto;
+DROP TABLE Categoria;
+DROP TABLE Sensore;
+DROP TABLE Sponsor;
+DROP TABLE Organizzazione_Campionato;
+DROP TABLE Campionato;
+DROP TABLE Organizzatore;
