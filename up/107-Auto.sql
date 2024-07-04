@@ -7,5 +7,3 @@ CREATE TABLE Auto (
     ente_categoria VARCHAR(100),
     nome_categoria VARCHAR(100)
 );
-
-ALTER TABLE Auto ADD FOREIGN KEY (nome_categoria,ente_categoria) REFERENCES Categoria (nome, ente_certificazione); 

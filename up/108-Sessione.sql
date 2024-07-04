@@ -6,5 +6,3 @@ CREATE TABLE Sessione(
     nome_campionato VARCHAR(100),
     anno_campionato NUMBER
 );
-
-ALTER TABLE Sessione ADD FOREIGN KEY (nome_campionato, anno_campionato) REFERENCES Campionato (nome, anno); 

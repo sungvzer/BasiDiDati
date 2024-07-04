@@ -5,6 +5,3 @@ CREATE TABLE Organizzazione_Campionato (
   created_at timestamp,
   PRIMARY KEY (p_iva_organizzatore, nome_campionato, anno_campionato)
 );
-
-ALTER TABLE Organizzazione_Campionato ADD FOREIGN KEY (p_iva_organizzatore) REFERENCES Organizzatore (p_iva);
-ALTER TABLE Organizzazione_Campionato ADD FOREIGN KEY (nome_campionato, anno_campionato) REFERENCES Campionato (nome, anno);

@@ -6,6 +6,3 @@ CREATE TABLE NoteSteward (
     numero_auto NUMBER,
     PRIMARY KEY (nome_steward, data_ora)
 );
-
-ALTER TABLE NoteSteward ADD FOREIGN KEY (sessione_id) REFERENCES Sessione (id);
-ALTER TABLE NoteSteward ADD FOREIGN KEY (numero_auto) REFERENCES Auto (numero);
