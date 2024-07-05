@@ -36,10 +36,12 @@ def execute_sql_file(connection, file_path):
 
         connection.commit()  # Commit the transaction if all statements execute successfully
         logging.info("SQL script executed successfully.")
+        return True
 
     except oracledb.Error as exception:
         logging.error(
             "An error occurred while executing the SQL script: %s", exception)
+        return False
 
     finally:
         cursor.close()
@@ -48,8 +50,6 @@ def execute_sql_file(connection, file_path):
 parser = argparse.ArgumentParser(
     prog='Basi di Dati SQL',
 )
-parser.add_argument(
-    '--up', help='Run the SQL scripts in the UP folder', action='store_true')
 parser.add_argument(
     '--down', help='Run the SQL scripts in the DOWN folder', action='store_true')
 
@@ -124,28 +124,65 @@ with oracledb.connect(
         logging.error("Error creating user: %s", e)
         sys.exit(1)
 
-logging.info('==== DOWN ====')
+if args.down:
+    logging.info('==== DOWN ====')
 
-for filename in sorted(os.listdir('down'), reverse=True):
-    if filename.startswith('000-'):
-        continue
-    if filename.endswith('.sql'):
-        with oracledb.connect(user=USERNAME, password=PASSWORD, dsn=CONNECTION_STRING) as conn:
-            logging.info('Executing down/%s', filename)
-            start_time = time.time()
-            execute_sql_file(conn, f'down/{filename}')
-            logging.info('Executed %s in %s seconds',
-                         filename, time.time() - start_time)
+    for filename in sorted(os.listdir('down'), reverse=True):
+        if filename.startswith('000-'):
+            continue
+        if filename.endswith('.sql'):
+            with oracledb.connect(user=USERNAME, password=PASSWORD, dsn=CONNECTION_STRING) as conn:
+                logging.info('Executing down/%s', filename)
+                start_time = time.time()
+                execute_sql_file(conn, f'down/{filename}')
+                logging.info('Executed %s in %s seconds',
+                             filename, time.time() - start_time)
+
+logging.info('==== MIGRATION TABLE ====')
+
+last_migration = None
+
+# if the migration table does not exist, create it
+with oracledb.connect(user=USERNAME, password=PASSWORD, dsn=CONNECTION_STRING) as conn:
+    try:
+        exists = conn.cursor().execute(
+            "SELECT COUNT(*) FROM all_tables WHERE table_name = 'MIGRATION'").fetchone()
+        if exists[0] == 0:
+            conn.cursor().execute(
+                """
+                CREATE TABLE migration (filename VARCHAR2(255) PRIMARY KEY, executed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL)
+                """)
+        else:
+            last_migration = conn.cursor().execute(
+                "SELECT filename FROM migration ORDER BY executed_at DESC").fetchone()[0]
+    except oracledb.Error as e:
+        logging.error("Error creating migration table: %s", e)
+        sys.exit(1)
 
 logging.info('==== UP ====')
 
-for filename in sorted(os.listdir('up')):
+
+filenames = os.listdir('up')
+# filter out the migrations before the last one
+if last_migration:
+    filenames = [filename for filename in filenames if filename > last_migration]
+    logging.info('Skipping migrations before %s', last_migration)
+
+for filename in sorted(filenames):
     if filename.startswith('000-'):
         continue
     if filename.endswith('.sql'):
-        with oracledb.connect(user=USERNAME, password=PASSWORD, dsn=CONNECTION_STRING) as conn:
+        with oracledb.connect(user=USERNAME,
+                              password=PASSWORD,
+                              dsn=CONNECTION_STRING) as conn:
             logging.info('Executing up/%s', filename)
             start_time = time.time()
-            execute_sql_file(conn, f'up/{filename}')
+            if execute_sql_file(conn, f'up/{filename}'):
+                logging.info('Inserting into migration table')
+                conn.cursor().execute(
+                        "INSERT INTO migration (filename) VALUES (:file_name)",
+                        file_name=filename
+                        )
+                conn.commit()
             logging.info('Executed %s in %s seconds',
                          filename, time.time() - start_time)

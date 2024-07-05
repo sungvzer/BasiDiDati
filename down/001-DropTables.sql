@@ -11,3 +11,4 @@ DROP TABLE Sponsor;
 DROP TABLE Organizzazione_Campionato;
 DROP TABLE Campionato;
 DROP TABLE Organizzatore;
+DROP TABLE Migration;
