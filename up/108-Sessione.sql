@@ -3,6 +3,6 @@ CREATE TABLE Sessione(
     tipo VARCHAR(20),
     durata_min NUMBER,
     data_ora DATE,
-    nome_campionato VARCHAR(100),
-    anno_campionato NUMBER
+    nome_campionato VARCHAR(100) NOT NULL,
+    anno_campionato NUMBER NOT NULL
 );
