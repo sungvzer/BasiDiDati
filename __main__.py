@@ -16,6 +16,11 @@ SYSTEM_PASSWORD = 'dbpass'
 USERNAME = 'GrandPrixGrandstand'
 PASSWORD = '23turns3sectors'
 
+logging.basicConfig(filename='log.log', level=logging.INFO, filemode='w',)
+
+logger = logging.getLogger(__name__)
+logger.addHandler(logging.StreamHandler())
+
 
 def execute_sql_file(connection, file_path):
     """
@@ -35,11 +40,11 @@ def execute_sql_file(connection, file_path):
                 cursor.execute(statement.strip())
 
         connection.commit()  # Commit the transaction if all statements execute successfully
-        logging.info("SQL script executed successfully.")
+        logger.info("SQL script executed successfully.")
         return True
 
     except oracledb.Error as exception:
-        logging.error(
+        logger.error(
             "An error occurred while executing the SQL script: %s", exception)
         return False
 
@@ -55,7 +60,6 @@ parser.add_argument(
 
 args = parser.parse_args(sys.argv[1:])
 
-logging.basicConfig(filename='log.log', level=logging.INFO, filemode='w')
 
 
 if False:  # pylint: disable=using-constant-test
@@ -121,24 +125,24 @@ with oracledb.connect(
                 f"ALTER USER {USERNAME} ACCOUNT UNLOCK")
 
     except oracledb.Error as e:
-        logging.error("Error creating user: %s", e)
+        logger.error("Error creating user: %s", e)
         sys.exit(1)
 
 if args.down:
-    logging.info('==== DOWN ====')
+    logger.info('==== DOWN ====')
 
     for filename in sorted(os.listdir('down'), reverse=True):
         if filename.startswith('000-'):
             continue
         if filename.endswith('.sql'):
             with oracledb.connect(user=USERNAME, password=PASSWORD, dsn=CONNECTION_STRING) as conn:
-                logging.info('Executing down/%s', filename)
+                logger.info('Executing down/%s', filename)
                 start_time = time.time()
                 execute_sql_file(conn, f'down/{filename}')
-                logging.info('Executed %s in %s seconds',
+                logger.info('Executed %s in %.2f seconds',
                              filename, time.time() - start_time)
 
-logging.info('==== MIGRATION TABLE ====')
+logger.info('==== MIGRATION TABLE ====')
 
 last_migration = None
 
@@ -156,17 +160,17 @@ with oracledb.connect(user=USERNAME, password=PASSWORD, dsn=CONNECTION_STRING) a
             last_migration = conn.cursor().execute(
                 "SELECT filename FROM migration ORDER BY executed_at DESC").fetchone()[0]
     except oracledb.Error as e:
-        logging.error("Error creating migration table: %s", e)
+        logger.error("Error creating migration table: %s", e)
         sys.exit(1)
 
-logging.info('==== UP ====')
+logger.info('==== UP ====')
 
 
 filenames = os.listdir('up')
 # filter out the migrations before the last one
 if last_migration:
     filenames = [filename for filename in filenames if filename > last_migration]
-    logging.info('Skipping migrations before %s', last_migration)
+    logger.info('Skipping migrations before %s', last_migration)
 
 for filename in sorted(filenames):
     if filename.startswith('000-'):
@@ -175,14 +179,14 @@ for filename in sorted(filenames):
         with oracledb.connect(user=USERNAME,
                               password=PASSWORD,
                               dsn=CONNECTION_STRING) as conn:
-            logging.info('Executing up/%s', filename)
+            logger.info('Executing up/%s', filename)
             start_time = time.time()
             if execute_sql_file(conn, f'up/{filename}'):
-                logging.info('Inserting into migration table')
+                logger.info('Inserting into migration table')
                 conn.cursor().execute(
                         "INSERT INTO migration (filename) VALUES (:file_name)",
                         file_name=filename
                         )
                 conn.commit()
-            logging.info('Executed %s in %s seconds',
+            logger.info('Executed %s in %.2f seconds',
                          filename, time.time() - start_time)
