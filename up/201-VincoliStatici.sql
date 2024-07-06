@@ -21,3 +21,15 @@ ALTER TABLE Campionato ADD CONSTRAINT data_fine_successiva CHECK (data_fine > da
 
 -- Il CAP dell’organizzatore deve essere una stringa di 5 caratteri numerici
 ALTER TABLE Organizzatore ADD CONSTRAINT cap_organizzatore CHECK (cap LIKE '_____' AND cap NOT LIKE '%[^0-9]%') ENABLE;
+
+-- La potenza massima di un’auto deve essere un numero positivo
+ALTER TABLE Auto ADD CONSTRAINT potenza_auto CHECK (potenza_cv > 0) ENABLE;
+
+-- Il peso di un’auto deve essere un numero positivo
+ALTER TABLE Auto ADD CONSTRAINT peso_auto CHECK (peso_kg > 0) ENABLE;
+
+-- Il peso minimo di una categoria deve essere un numero positivo
+ALTER TABLE Categoria ADD CONSTRAINT peso_categoria CHECK (peso_minimo_kg > 0) ENABLE;
+
+-- La potenza massima di una categoria deve essere un numero positivo
+ALTER TABLE Categoria ADD CONSTRAINT potenza_categoria CHECK (potenza_massima_cv > 0) ENABLE;

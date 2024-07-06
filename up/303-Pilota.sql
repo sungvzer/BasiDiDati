@@ -29,9 +29,9 @@ INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Romain
 INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Alexander', 'Albon', date'1996-03-23', 'Thailandese');
 INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Jack', 'Aitken', date'1995-09-23', 'Britannica');
 INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Oliver', 'Turvey', date'1987-04-01', 'Britannica');
-INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Paul', 'di Resta', date'1986-04-16', 'Britannica');
-INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Jean-Éric', 'Vergne', date'1990-04-25', 'Francese');
-INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Felipe', 'Nasr', date'1992-08-21', 'Brasiliana');
+INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Paul', 'di Resta', date'2007-04-16', 'Britannica');
+INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Jean-Éric', 'Vergne', date'2008-04-25', 'Francese');
+INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Felipe', 'Nasr', date'2005-08-21', 'Brasiliana');
 INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('André', 'Lotterer', date'1981-11-19', 'Tedesca');
 INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('René', 'Rast', date'1986-10-26', 'Tedesca');
 INSERT INTO Pilota (nome, cognome, data_di_nascita, nazionalita) VALUES ('Loïc', 'Duval', date'1982-06-12', 'Francese');
