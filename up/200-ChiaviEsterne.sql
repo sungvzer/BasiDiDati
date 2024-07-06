@@ -18,3 +18,4 @@ ALTER TABLE Iscrizione ADD FOREIGN KEY (id_pilota) REFERENCES Pilota (id);
 ALTER TABLE Iscrizione ADD FOREIGN KEY (numero_auto) REFERENCES Auto (numero);
 ALTER TABLE Iscrizione ADD FOREIGN KEY (id_sessione) REFERENCES Sessione (id);
 ALTER TABLE Iscrizione ADD FOREIGN KEY (nome_squadra) REFERENCES Squadra (nome);
+CREATE UNIQUE INDEX pilota_sessione ON iscrizione (id_pilota, id_sessione);
