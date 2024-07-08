@@ -1,0 +1,13 @@
+version: "3"
+name: basi_di_dati
+services:
+    oracle-xe:
+        ports:
+            - 1521:1521
+        environment:
+            - ORACLE_PASSWORD=dbpass
+        image: gvenzl/oracle-xe
+        volumes:
+            - oracle-xe:/opt/oracle/oradata
+volumes:
+  oracle-xe:
