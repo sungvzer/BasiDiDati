@@ -1,0 +1,15 @@
+CREATE OR REPLACE TRIGGER ISCRIZIONI_48_ORE BEFORE
+    INSERT ON ISCRIZIONE FOR EACH ROW
+DECLARE
+    ORA_SESSIONE DATE;
+BEGIN
+    SELECT
+        SESSIONE.DATA_ORA INTO ORA_SESSIONE
+    FROM
+        SESSIONE
+    WHERE
+        :NEW.ID_SESSIONE = SESSIONE.ID;
+    IF ORA_SESSIONE < SYSDATE + 2 THEN
+        RAISE_APPLICATION_ERROR ( -20002, 'Iscrizione non possibile: mancano meno di 48 ore alla sessione, o l''orario della sessione è già passato.' );
+    END IF;
+END;

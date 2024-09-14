@@ -1,15 +1,179 @@
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'GT3', 600, 1200);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('IMSA', 'GT3', 500, 1500);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'Formula 1', 1000, 700);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'LMH', 500, 1500);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'Formula 2', 600, 700);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'Formula 3', 400, 700);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'Formula 4', 300, 700);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'Formula E', 300, 700);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('IMSA', 'LMDh', 600, 900);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('IMSA', 'LMP2', 600, 900);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('NASCAR', 'Cup Series', 750, 1450);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('Supercars', 'V8 Supercars', 635, 1395);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('SRO', 'GT4', 430, 1400);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('FIA', 'LMP2', 600, 900);
-INSERT INTO Categoria (ente_certificazione, nome, potenza_massima_cv, peso_minimo_kg) VALUES ('Formula Drift', 'Pro', 900, 1150);
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'GT3',
+    600,
+    1200
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'IMSA',
+    'GT3',
+    500,
+    1500
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'Formula 1',
+    1000,
+    700
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'LMH',
+    500,
+    1500
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'Formula 2',
+    600,
+    700
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'Formula 3',
+    400,
+    700
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'Formula 4',
+    300,
+    700
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'Formula E',
+    300,
+    700
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'IMSA',
+    'LMDh',
+    600,
+    900
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'IMSA',
+    'LMP2',
+    600,
+    900
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'NASCAR',
+    'Cup Series',
+    750,
+    1450
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'Supercars',
+    'V8 Supercars',
+    635,
+    1395
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'SRO',
+    'GT4',
+    430,
+    1400
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'FIA',
+    'LMP2',
+    600,
+    900
+);
+
+INSERT INTO CATEGORIA (
+    ENTE_CERTIFICAZIONE,
+    NOME,
+    POTENZA_MASSIMA_CV,
+    PESO_MINIMO_KG
+) VALUES (
+    'Formula Drift',
+    'Pro',
+    900,
+    1150
+);

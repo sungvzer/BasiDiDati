@@ -9,7 +9,7 @@ import logging
 import oracledb
 
 
-def execute_sql_file(connection, file_path):
+def execute_sql_file(connection, file_path: str):
     """
     Executes the SQL statements in the given file using the provided Oracle database connection.
 
@@ -22,6 +22,12 @@ def execute_sql_file(connection, file_path):
             sql_script = file.read()
 
         cursor = connection.cursor()
+
+        if 'Dinamici' in file_path:
+            cursor.execute(sql_script)
+            logger.info("VINCOLI DINAMICI OK")
+            return True
+
         # Split the SQL script into individual statements and execute each one
         for statement in sql_script.split(';'):
             if statement.strip():
@@ -51,7 +57,11 @@ def main():
     username = 'GrandPrixGrandstand'
     password = '23turns3sectors'
 
-    logging.basicConfig(filename='log.log', level=logging.INFO, filemode='w',)
+    logging.basicConfig(level=logging.INFO,
+                        handlers=[
+                            logging.FileHandler('log.log', 'w', 'utf-8'),
+                            logging.StreamHandler(sys.stdout)
+                        ])
 
     logger = logging.getLogger(__name__)
     logger.addHandler(logging.StreamHandler())
@@ -191,7 +201,10 @@ def main():
                                   dsn=connection_string) as conn:
                 logger.info('Executing up/%s', filename)
                 start_time = time.time()
-                if execute_sql_file(conn, f'up/{filename}'):
+                if not execute_sql_file(conn, f'up/{filename}'):
+                    logger.error('Failed to execute %s', filename)
+                    sys.exit(1)
+                else:
                     logger.info('Inserting into migration table')
                     conn.cursor().execute(
                         "INSERT INTO migration (filename) VALUES (:file_name)",

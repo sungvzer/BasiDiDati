@@ -1,7 +1,7 @@
-CREATE TABLE Campionato (
-  nome VARCHAR(100),
-  anno NUMBER,
-  data_inizio DATE,
-  data_fine DATE,
-  PRIMARY KEY (nome, anno)
+CREATE TABLE CAMPIONATO (
+  NOME VARCHAR(100),
+  ANNO NUMBER,
+  DATA_INIZIO DATE,
+  DATA_FINE DATE,
+  PRIMARY KEY (NOME, ANNO)
 );

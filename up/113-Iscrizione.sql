@@ -1,7 +1,7 @@
-CREATE TABLE Iscrizione (
-    id_pilota NUMBER NOT NULL,
-    numero_auto NUMBER NOT NULL,
-    id_sessione NUMBER NOT NULL,
-    nome_squadra VARCHAR(100) NOT NULL,
-    PRIMARY KEY (id_pilota, numero_auto, id_sessione, nome_squadra)
+CREATE TABLE ISCRIZIONE (
+    ID_PILOTA NUMBER NOT NULL,
+    NUMERO_AUTO NUMBER NOT NULL,
+    ID_SESSIONE NUMBER NOT NULL,
+    NOME_SQUADRA VARCHAR(100) NOT NULL,
+    PRIMARY KEY (ID_PILOTA, NUMERO_AUTO, ID_SESSIONE)
 );
