@@ -1,7 +1,7 @@
-CREATE TABLE Passaggio (
-    settore_sensore NUMBER,
-    data_ora TIMESTAMP(4),
-    numero_auto NUMBER,
-    sessione_id NUMBER NOT NULL,
-    PRIMARY KEY (settore_sensore, data_ora)
+CREATE TABLE PASSAGGIO (
+    SETTORE_SENSORE NUMBER,
+    DATA_ORA TIMESTAMP(4),
+    NUMERO_AUTO NUMBER,
+    SESSIONE_ID NUMBER NOT NULL,
+    PRIMARY KEY (SETTORE_SENSORE, DATA_ORA)
 );

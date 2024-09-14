@@ -1,10 +1,18 @@
-CREATE OR REPLACE TRIGGER Passaggio_Durante_Sessione
-BEFORE
-INSERT ON Passaggio
-FOR EACH ROW DECLARE data_ora DATE; durata NUMBER; BEGIN
-SELECT Data_Ora,
-       Durata_Min INTO data_ora,
-                       durata
-FROM Sessione
-WHERE Sessione.ID = :NEW.Sessione_ID; IF :NEW.Data_Ora < data_ora
-  OR :NEW.Data_Ora > data_ora + durata/1440 THEN RAISE_APPLICATION_ERROR (-20000, 'Il passaggio non è durante la sessione'); END IF; END;
+CREATE OR REPLACE TRIGGER PASSAGGIO_DURANTE_SESSIONE BEFORE
+  INSERT ON PASSAGGIO FOR EACH ROW
+DECLARE
+  DATA_ORA DATE;
+  DURATA   NUMBER;
+BEGIN
+  SELECT
+    DATA_ORA,
+    DURATA_MIN INTO DATA_ORA,
+    DURATA
+  FROM
+    SESSIONE
+  WHERE
+    SESSIONE.ID = :NEW.SESSIONE_ID;
+  IF :NEW.DATA_ORA < DATA_ORA OR :NEW.DATA_ORA > DATA_ORA + DURATA/1440 THEN
+    RAISE_APPLICATION_ERROR (-20000, 'Il passaggio non è durante la sessione');
+  END IF;
+END;

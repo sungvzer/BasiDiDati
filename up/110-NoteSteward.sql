@@ -1,9 +1,8 @@
-CREATE TABLE NoteSteward (
-    codice_steward varchar(100),
-    data_ora date,
-    contenuto varchar(4000),
-    sessione_id NUMBER,
-    numero_auto NUMBER,
-    PRIMARY KEY (codice_steward, data_ora)
+CREATE TABLE NOTESTEWARD (
+    CODICE_STEWARD VARCHAR(100),
+    DATA_ORA DATE,
+    CONTENUTO VARCHAR(4000),
+    SESSIONE_ID NUMBER,
+    NUMERO_AUTO NUMBER,
+    PRIMARY KEY (CODICE_STEWARD, DATA_ORA)
 );
-

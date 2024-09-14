@@ -1,21 +1,121 @@
-ALTER TABLE Organizzazione_Campionato ADD FOREIGN KEY (p_iva_organizzatore) REFERENCES Organizzatore (p_iva);
-ALTER TABLE Organizzazione_Campionato ADD FOREIGN KEY (nome_campionato, anno_campionato) REFERENCES Campionato (nome, anno);
+ALTER TABLE ORGANIZZAZIONE_CAMPIONATO
+    ADD FOREIGN KEY (
+        P_IVA_ORGANIZZATORE
+    )
+        REFERENCES ORGANIZZATORE (
+            P_IVA
+        );
 
-ALTER TABLE Sponsor ADD FOREIGN KEY (nome_campionato, anno_campionato) REFERENCES Campionato (nome, anno);
+ALTER TABLE ORGANIZZAZIONE_CAMPIONATO
+    ADD FOREIGN KEY (
+        NOME_CAMPIONATO,
+        ANNO_CAMPIONATO
+    )
+        REFERENCES CAMPIONATO (
+            NOME,
+            ANNO
+        );
 
-ALTER TABLE Auto ADD FOREIGN KEY (nome_categoria,ente_categoria) REFERENCES Categoria (nome, ente_certificazione); 
+ALTER TABLE SPONSOR
+    ADD FOREIGN KEY (
+        NOME_CAMPIONATO,
+        ANNO_CAMPIONATO
+    )
+        REFERENCES CAMPIONATO (
+            NOME,
+            ANNO
+        );
 
-ALTER TABLE Sessione ADD FOREIGN KEY (nome_campionato, anno_campionato) REFERENCES Campionato (nome, anno); 
+ALTER TABLE AUTO
+    ADD FOREIGN KEY (
+        NOME_CATEGORIA,
+        ENTE_CATEGORIA
+    )
+        REFERENCES CATEGORIA (
+            NOME,
+            ENTE_CERTIFICAZIONE
+        );
 
-ALTER TABLE Passaggio ADD FOREIGN KEY (numero_auto) REFERENCES Auto (numero);
-ALTER TABLE Passaggio ADD FOREIGN KEY (sessione_id) REFERENCES Sessione (id);
-ALTER TABLE Passaggio ADD FOREIGN KEY (settore_sensore) REFERENCES Sensore (settore);
+ALTER TABLE SESSIONE
+    ADD FOREIGN KEY (
+        NOME_CAMPIONATO,
+        ANNO_CAMPIONATO
+    )
+        REFERENCES CAMPIONATO (
+            NOME,
+            ANNO
+        );
 
-ALTER TABLE NoteSteward ADD FOREIGN KEY (sessione_id) REFERENCES Sessione (id);
-ALTER TABLE NoteSteward ADD FOREIGN KEY (numero_auto) REFERENCES Auto (numero);
+ALTER TABLE PASSAGGIO
+    ADD FOREIGN KEY (
+        NUMERO_AUTO
+    )
+        REFERENCES AUTO (
+            NUMERO
+        );
 
-ALTER TABLE Iscrizione ADD FOREIGN KEY (id_pilota) REFERENCES Pilota (id);
-ALTER TABLE Iscrizione ADD FOREIGN KEY (numero_auto) REFERENCES Auto (numero);
-ALTER TABLE Iscrizione ADD FOREIGN KEY (id_sessione) REFERENCES Sessione (id);
-ALTER TABLE Iscrizione ADD FOREIGN KEY (nome_squadra) REFERENCES Squadra (nome);
-CREATE UNIQUE INDEX pilota_sessione ON iscrizione (id_pilota, id_sessione);
+ALTER TABLE PASSAGGIO
+    ADD FOREIGN KEY (
+        SESSIONE_ID
+    )
+        REFERENCES SESSIONE (
+            ID
+        );
+
+ALTER TABLE PASSAGGIO
+    ADD FOREIGN KEY (
+        SETTORE_SENSORE
+    )
+        REFERENCES SENSORE (
+            SETTORE
+        );
+
+ALTER TABLE NOTESTEWARD
+    ADD FOREIGN KEY (
+        SESSIONE_ID
+    )
+        REFERENCES SESSIONE (
+            ID
+        );
+
+ALTER TABLE NOTESTEWARD
+    ADD FOREIGN KEY (
+        NUMERO_AUTO
+    )
+        REFERENCES AUTO (
+            NUMERO
+        );
+
+ALTER TABLE ISCRIZIONE
+    ADD FOREIGN KEY (
+        ID_PILOTA
+    )
+        REFERENCES PILOTA (
+            ID
+        );
+
+ALTER TABLE ISCRIZIONE
+    ADD FOREIGN KEY (
+        NUMERO_AUTO
+    )
+        REFERENCES AUTO (
+            NUMERO
+        );
+
+ALTER TABLE ISCRIZIONE
+    ADD FOREIGN KEY (
+        ID_SESSIONE
+    )
+        REFERENCES SESSIONE (
+            ID
+        );
+
+ALTER TABLE ISCRIZIONE
+    ADD FOREIGN KEY (
+        NOME_SQUADRA
+    )
+        REFERENCES SQUADRA (
+            NOME
+        );
+
+CREATE UNIQUE INDEX PILOTA_SESSIONE ON ISCRIZIONE (ID_PILOTA, ID_SESSIONE);

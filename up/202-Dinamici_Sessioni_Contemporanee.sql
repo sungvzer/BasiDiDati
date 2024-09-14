@@ -1,27 +1,18 @@
-CREATE
-OR REPLACE TRIGGER Sessioni_Contemporanee BEFORE
-INSERT
-    ON Sessione FOR EACH ROW
+CREATE OR REPLACE TRIGGER SESSIONI_CONTEMPORANEE BEFORE
+    INSERT ON SESSIONE FOR EACH ROW
 DECLARE
-numero_sessioni INTEGER;
-
+    NUMERO_SESSIONI INTEGER;
 BEGIN
-SELECT
-    COUNT(*) INTO numero_sessioni
-FROM
-    Sessione
-WHERE
-    (
-        (
-            data_ora BETWEEN :NEW.data_ora AND :NEW.data_ora + :NEW.durata_min / (24 * 60)
-        )
-        OR (
-            :NEW.data_ora BETWEEN data_ora AND data_ora + durata_min / (24 * 60)
-        )
-    );
-
-IF numero_sessioni > 0 THEN RAISE_APPLICATION_ERROR (-20001, 'Sessioni sovrapposte');
-
-END IF;
-
+    SELECT
+        COUNT(*) INTO NUMERO_SESSIONI
+    FROM
+        SESSIONE
+    WHERE
+        ( ( DATA_ORA BETWEEN :NEW.DATA_ORA
+        AND :NEW.DATA_ORA + :NEW.DURATA_MIN / (24 * 60) )
+        OR ( :NEW.DATA_ORA BETWEEN DATA_ORA
+        AND DATA_ORA + DURATA_MIN / (24 * 60) ) );
+    IF NUMERO_SESSIONI > 0 THEN
+        RAISE_APPLICATION_ERROR (-20001, 'Sessioni sovrapposte');
+    END IF;
 END;

@@ -1,9 +1,9 @@
-CREATE TABLE Auto (
-    numero NUMBER PRIMARY KEY,
-    marca VARCHAR(100),
-    potenza_cv NUMBER,
-    peso_kg NUMBER,
-    modello VARCHAR(100),
-    ente_categoria VARCHAR(100),
-    nome_categoria VARCHAR(100)
+CREATE TABLE AUTO (
+    NUMERO NUMBER PRIMARY KEY,
+    MARCA VARCHAR(100),
+    POTENZA_CV NUMBER,
+    PESO_KG NUMBER,
+    MODELLO VARCHAR(100),
+    ENTE_CATEGORIA VARCHAR(100),
+    NOME_CATEGORIA VARCHAR(100)
 );
