@@ -1,87 +1,1007 @@
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:02:32.500146', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:03:27.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:05:00.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:05:34.982250', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:06:27.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:08:00.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:08:35.479265', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:09:32.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:11:06.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:11:41.309024', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:12:38.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:14:10.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:14:47.881215', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:15:43.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:17:18.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:17:57.831800', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:18:50.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:20:26.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:21:04.929454', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:21:57.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:23:30.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:24:10.025182', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:25:03.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:26:35.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:27:14.501976', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:28:12.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:29:45.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:30:22.357173', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:31:19.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:32:48.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:33:25.888215', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:34:19.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:35:51.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:36:27.034524', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:37:23.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:38:53.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:39:30.075625', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:40:23.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:41:54.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:42:30.545323', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:43:27.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:44:58.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:45:36.183233', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:46:33.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:48:04.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:48:44.596173', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:49:39.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:51:15.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:51:53.033732', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:52:46.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:54:15.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:54:52.072257', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:55:49.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 10:57:26.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 10:58:06.932041', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 10:59:00.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:00:35.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:01:12.945505', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:02:05.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:03:41.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:04:21.846720', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:05:18.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:06:55.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:07:34.408273', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:08:29.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:09:58.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:10:33.959019', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:11:29.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:13:01.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:13:35.326567', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:14:28.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:16:03.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:16:41.809271', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:17:35.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:19:03.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:19:42.774856', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:20:40.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:22:15.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:22:54.158435', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:23:47.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:25:16.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:25:51.687331', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:26:48.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:28:17.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(1, TIMESTAMP '2024-03-29 11:28:54.989681', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(2, TIMESTAMP '2024-03-29 11:29:51.000000', 301, 1);
-INSERT INTO Passaggio (settore_sensore, data_ora, numero_auto, sessione_id) VALUES(3, TIMESTAMP '2024-03-29 11:31:25.000000', 301, 1);
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:02:32.500146',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:03:27.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:05:00.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:05:34.982250',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:06:27.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:08:00.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:08:35.479265',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:09:32.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:11:06.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:11:41.309024',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:12:38.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:14:10.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:14:47.881215',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:15:43.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:17:18.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:17:57.831800',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:18:50.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:20:26.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:21:04.929454',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:21:57.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:23:30.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:24:10.025182',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:25:03.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:26:35.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:27:14.501976',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:28:12.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:29:45.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:30:22.357173',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:31:19.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:32:48.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:33:25.888215',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:34:19.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:35:51.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:36:27.034524',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:37:23.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:38:53.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:39:30.075625',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:40:23.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:41:54.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:42:30.545323',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:43:27.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:44:58.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:45:36.183233',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:46:33.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:48:04.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:48:44.596173',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:49:39.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:51:15.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:51:53.033732',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:52:46.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:54:15.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:54:52.072257',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:55:49.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 10:57:26.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 10:58:06.932041',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 10:59:00.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:00:35.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:01:12.945505',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:02:05.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:03:41.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:04:21.846720',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:05:18.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:06:55.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:07:34.408273',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:08:29.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:09:58.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:10:33.959019',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:11:29.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:13:01.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:13:35.326567',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:14:28.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:16:03.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:16:41.809271',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:17:35.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:19:03.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:19:42.774856',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:20:40.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:22:15.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:22:54.158435',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:23:47.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:25:16.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    1,
+    TIMESTAMP '2026-03-27 11:25:51.687331',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    2,
+    TIMESTAMP '2026-03-27 11:26:48.000000',
+    101,
+    1
+);
+
+INSERT INTO PASSAGGIO (
+    SETTORE_SENSORE,
+    DATA_ORA,
+    NUMERO_AUTO,
+    SESSIONE_ID
+) VALUES(
+    3,
+    TIMESTAMP '2026-03-27 11:28:17.000000',
+    101,
+    1
+);

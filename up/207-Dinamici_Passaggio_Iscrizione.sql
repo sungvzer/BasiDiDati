@@ -1,0 +1,17 @@
+-- È possibile registrare i passaggi delle sole vetture che sono iscritte correttamente alla sessione.
+CREATE OR REPLACE TRIGGER PASSAGGIO_ISCRIZIONE BEFORE
+    INSERT ON PASSAGGIO FOR EACH ROW
+DECLARE
+    V_NUMERO_ISCRIZIONI NUMBER;
+BEGIN
+    SELECT
+        COUNT(*) INTO V_NUMERO_ISCRIZIONI
+    FROM
+        ISCRIZIONE
+    WHERE
+        ISCRIZIONE.ID_SESSIONE = :NEW.SESSIONE_ID
+        AND ISCRIZIONE.NUMERO_AUTO = :NEW.NUMERO_AUTO;
+    IF V_NUMERO_ISCRIZIONI = 0 THEN
+        RAISE_APPLICATION_ERROR(-20000, 'La vettura non è iscritta alla sessione');
+    END IF;
+END;
