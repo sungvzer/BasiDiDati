@@ -28,6 +28,12 @@ def execute_sql_file(connection, file_path: str):
             logger.info("VINCOLI DINAMICI OK")
             return True
 
+
+        if file_path.startswith('up/4'):
+            cursor.execute(sql_script)
+            logger.info("FUNZIONI OK")
+            return True
+
         # Split the SQL script into individual statements and execute each one
         for statement in sql_script.split(';'):
             if statement.strip():
@@ -64,7 +70,6 @@ def main():
                         ])
 
     logger = logging.getLogger(__name__)
-    logger.addHandler(logging.StreamHandler())
 
     parser = argparse.ArgumentParser(
         prog='Basi di Dati SQL',
