@@ -77,7 +77,7 @@ INSERT INTO NOTESTEWARD (
 ) VALUES (
     'INSPECTOR-1340',
     TIMESTAMP '2026-03-29 15:02:00.000000',
-    'Peso auto inferiore al limite minimo',
+    'Manovra pericolosa in uscita dai box',
     3,
     104
 );
