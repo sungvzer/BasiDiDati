@@ -13,7 +13,7 @@ CREATE OR REPLACE PROCEDURE PENALIZZA_AUTO(
     V_VIOLAZIONI        NUMBER := 0;
 BEGIN
  
-    -- ERRRORI: Auto non trovata, auto non partecipante alla sessione, sessione non trovata, peso e potenza nei limiti di regolamento, nessun passaggio nella sessione
+    -- ERRORI: Auto non trovata, auto non partecipante alla sessione, sessione non trovata, peso e potenza nei limiti di regolamento, nessun passaggio nella sessione
     SELECT
         COUNT(*) INTO V_CONTA_AUTO
     FROM

@@ -34,6 +34,12 @@ def execute_sql_file(connection, file_path: str):
             logger.info("FUNZIONI OK")
             return True
 
+
+        if file_path.startswith('up/5'):
+            cursor.execute(sql_script)
+            logger.info("SCHEDUER OK")
+            return True
+
         # Split the SQL script into individual statements and execute each one
         for statement in sql_script.split(';'):
             if statement.strip():
