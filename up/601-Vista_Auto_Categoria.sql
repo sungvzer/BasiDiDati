@@ -1,0 +1,15 @@
+CREATE VIEW VISTA_AUTO_CATEGORIA AS
+    SELECT
+        A.NUMERO,
+        A.MARCA,
+        A.MODELLO,
+        A.POTENZA_CV,
+        A.PESO_KG,
+        C.NOME               AS NOME_CATEGORIA,
+        C.POTENZA_MASSIMA_CV,
+        C.PESO_MINIMO_KG
+    FROM
+        AUTO      A
+        JOIN CATEGORIA C
+        ON A.ENTE_CATEGORIA = C.ENTE_CERTIFICAZIONE
+        AND A.NOME_CATEGORIA = C.NOME;

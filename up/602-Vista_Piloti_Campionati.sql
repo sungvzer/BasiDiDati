@@ -1,0 +1,22 @@
+CREATE VIEW VISTA_PILOTI_CAMPIONATI AS
+    SELECT
+        P.ID      AS ID_PILOTA,
+        P.NOME    AS NOME_PILOTA,
+        P.COGNOME AS COGNOME_PILOTA,
+        C.NOME    AS NOME_CAMPIONATO,
+        C.ANNO    AS ANNO_CAMPIONATO
+    FROM
+        PILOTA     P
+        JOIN ISCRIZIONE I
+        ON P.ID = I.ID_PILOTA
+        JOIN SESSIONE S
+        ON I.ID_SESSIONE = S.ID
+        JOIN CAMPIONATO C
+        ON S.NOME_CAMPIONATO = C.NOME
+        AND S.ANNO_CAMPIONATO = C.ANNO
+    GROUP BY
+        P.ID,
+        P.NOME,
+        P.COGNOME,
+        C.NOME,
+        C.ANNO;
